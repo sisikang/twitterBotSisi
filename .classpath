@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JRE V8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/sketch_200318a.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/core.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/gluegen-rt-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/jogl-all-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/Java/jogl-all.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/jaunt1.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/twitter4j-examples-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/twitter4j-media-support-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/twitter4j-stream-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/twitter4j-async-4.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ri0tgrrrl/Desktop/SisiJava/TwitterBotSisi/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
