@@ -54,17 +54,17 @@ public class TwitterBotMain extends PApplet {
 //NOTE: everything starts uncommented. Comment out the calls that you would like to try and use.
 		
 		loadNovel("data/The Grand Sophy excerpt.txt"); //TODO: must train from another source
-//		println("Token size:"+tokens.size());
+		println("Token size:"+tokens.size());
 
 		//TODO: train an AI algorithm (eg, Markov Chain) and generate text for markov chain status
 		
 		//can train on twitter statuses -- note: in your code I would put this part in a separate function
 		//but anyhow, here is an example of searrching twitter hashtag. You have to pay $$ to the man to get more results. :(
 		//see TwitterInteraction class
-//		ArrayList<String> tweetResults = tweet.searchForTweets("John Cage");
-//		for (int i = 0; i < tweetResults.size(); i++) {
-//				println(tweetResults.get(i)); //just prints out the results for now
-//		}
+	ArrayList<String> tweetResults = tweet.searchForTweets("John Cage");
+	for (int i = 0; i < tweetResults.size(); i++) {
+			println(tweetResults.get(i)); //just prints out the results for now
+	}
 		
 		//Make sure within Twitter limits (used to be 140 but now is more?)
 		String status = "OMG testing again";
@@ -97,13 +97,13 @@ public class TwitterBotMain extends PApplet {
 		tokens = new ArrayList<String>();
 
 		try {
-			List<String> lines = Files.readAllLines(path);
+			List<String> lines = Files.readAllLines(path); //read all lines on file to put it in a list
 
 			for (int i = 0; i < lines.size(); i++) {
 
 				TextTokenizer tokenizer = new TextTokenizer(lines.get(i));
-				ArrayList<String> t = tokenizer.parseSearchText();
-				tokens.addAll(t);
+				ArrayList<String> t = tokenizer.parseSearchText(); // return all tokens
+				tokens.addAll(t); //ADD ALL
 			}
 
 		} catch (Exception e) {
