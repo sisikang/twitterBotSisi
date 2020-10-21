@@ -54,8 +54,8 @@ public class Scraper {
 	    		UserAgent userAgent2 = new UserAgent();
 	    		try {
 	    			userAgent2.visit(strLink.substring(startIndex+1, endIndex));
-	    			String body = userAgent2.doc.findFirst("<body>").getTextContent();
-	    			results.add(body); 
+	    			String body = userAgent2.doc.findFirst("<body>").getTextContent(); //get the body of the text
+	    			results.add(body); //add text to result 
 	    		}
 	    		catch (Exception e)
 	    		{

@@ -1,4 +1,4 @@
-/* Programmer: Sisi Kang
+/* 
  * Date: Fall 2017, modified 2019
  * This class uses the twitter4j library to update a twitter status via code and perform limited searches.
  * Using API & modfied from examples here: http://twitter4j.org/en/
@@ -19,10 +19,10 @@ public class TwitterInteraction {
 		try {
 			//find the keys here: https://developer.twitter.com/en/apps/
 			ConfigurationBuilder cb = new ConfigurationBuilder();
-			cb.setDebugEnabled(true).setOAuthConsumerKey("RpqHouyDHWubB3MXE7ozJhz0A") //API Key here
-					.setOAuthConsumerSecret("63mc8UnB7Z5blz5UaVkJ5V1eyCwxFEuDY6gaNYMmZ51etJ9QVT") //Secret key here
-					.setOAuthAccessToken("911747143299403776-JldNjA5mWUyjYtL5FjSZJjY1aCzOBKC") //access token here
-					.setOAuthAccessTokenSecret("Yfui2eWWNWSFpEWd8LbiGjGAe6rS4ICW4CzkSENphJvR5"); //secret access token here
+			cb.setDebugEnabled(true).setOAuthConsumerKey("1k6RYJEQ9UHAGoeeJmqAbY482") //API Key here
+					.setOAuthConsumerSecret("hvSCvVaqhezFqKKLEcPxcnRLg0UZwFJzycLI9JRst5OzWdApDz") //Secret key here
+					.setOAuthAccessToken("1308910724551503875-ZSFv86zOQtEe2KUZqtAwhhowygNTNt") //access token here
+					.setOAuthAccessTokenSecret("TRnBxjPcgz38Tfi0Ngo6PXbCtn4ktbkwly9FXunklVpyw"); //secret access token here
 			TwitterFactory tf = new TwitterFactory(cb.build());
 			twitter = tf.getInstance();
 

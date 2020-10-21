@@ -1,4 +1,4 @@
-/* Programmer: Sisi Kang
+/* 
  * Date: Created Fall 2018, Modified 2019, 2020 (removed Set & used ArrayList instead)
  * Desc:  Turns input text into tokens. Removes whitespace, some punctuation, etc. 
  *  The original code was lifted from an online example and then modified. The link got lost in the internet. mea culpa.
@@ -16,7 +16,7 @@ public class TextTokenizer {
 	    if (aSearchText == null) {
 	      throw new IllegalArgumentException("Search Text cannot be null.");
 	    } 
-	    fSearchText = aSearchText;
+	    fSearchText = aSearchText; //sets the search text to the string aSearchText you are passing
 	  }
 
 	/**
@@ -34,8 +34,8 @@ public class TextTokenizer {
 		ArrayList<String> result = new ArrayList<>();
 
 		boolean returnTokens = true;
-		String currentDelims = fWHITESPACE_AND_QUOTES_PUNCTUATION;
-		StringTokenizer parser = new StringTokenizer(fSearchText, currentDelims, true);
+		String currentDelims = fWHITESPACE_AND_QUOTES_PUNCTUATION; //create the delimiters
+		StringTokenizer parser = new StringTokenizer(fSearchText, currentDelims, true); // send text want to tokenized here with string fSearchText, and the delimiters is currentDelims
 
 		String token = null;
 		while (parser.hasMoreTokens()) {
@@ -52,9 +52,9 @@ public class TextTokenizer {
 	private static final Set<String> fCOMMON_WORDS = new LinkedHashSet<>();
 
 	// the parser flips between these two sets of delimiters
-	private static final String fWHITESPACE_AND_QUOTES_PUNCTUATION = " \t\r\n\",.!?;:()/\\";
+	private static final String fWHITESPACE_AND_QUOTES_PUNCTUATION = " \t\r\n\",.!?;:()/\\"; //delimiters set here if want to change the string
 	private static final String fWHITESPACE = " \t\r\n";
-	private static final String fQUOTES_ONLY = "\"";
+	private static final String fQUOTES_ONLY = "\""; //could change quotes here
 	
 	private static final String fHASHES = "#@";
 
