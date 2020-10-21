@@ -1,5 +1,5 @@
-//
-//Date: Oct 14
+//Programmer: Sisi Kang
+//Date: Oct 20
 //Description: project 3 generating a melody 
 
 import java.util.ArrayList;
